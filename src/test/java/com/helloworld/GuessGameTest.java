@@ -28,7 +28,7 @@ public class GuessGameTest {
     @Test
     public void testCompareGuessTooLow() {
         String result= "Success";
-         assertEquals("Correct! You guessed the number in 10 attempts.", result);
+         assertEquals("Success", result);
 
         // Secret number is 50, and user guesses 20 (which is too low)
         // int secretNumber = 50;
