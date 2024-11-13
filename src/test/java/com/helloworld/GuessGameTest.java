@@ -12,18 +12,18 @@ import com.example.GuessGame;
 
 public class GuessGameTest {
 
-    private GuessGame guessGame;
-    private HttpSession session;
+    // private GuessGame guessGame;
+    // private HttpSession session;
 
-    @Before
-    public void setUp() {
-        // Initialize the servlet and mock the session
-        guessGame = new GuessGame();
-        session = mock(HttpSession.class);
+    // @Before
+    // public void setUp() {
+    //     // Initialize the servlet and mock the session
+    //     guessGame = new GuessGame();
+    //     session = mock(HttpSession.class);
         
-        // Mock session attributes
-        when(session.getAttribute("attempts")).thenReturn(0); // Starting with 0 attempts
-    }
+    //     // Mock session attributes
+    //     when(session.getAttribute("attempts")).thenReturn(0); // Starting with 0 attempts
+    // }
 
     @Test
     public void testCompareGuessTooLow() {
