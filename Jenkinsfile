@@ -2,12 +2,12 @@ pipeline {
     agent any
     
     tools {
-        jdk 'java17'
+        jdk 'java21'
         maven 'maven'
     }
     environment {
         // Define environment variables
-        BRANCH_NAME = "${env.GIT_BRANCH}"
+        BRANCH_NAME = scm
         TOMCAT_SERVER = "http://192.168.0.113:8080"
         TOMCAT_USER = "admin"
         TOMCAT_PASSWORD = "Moh123\$\$" 
