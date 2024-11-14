@@ -14,8 +14,8 @@ public class GuessGameTest {
 
     @Test
     public void testCompareGuessTooLow() {
-        String result= "Success";
-         assertEquals("Success", result);
+        String result= "Successful";
+         assertEquals("Successful", result);
     }
 
     
